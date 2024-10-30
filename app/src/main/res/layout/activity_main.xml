@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="AgraApp"
+        app:titleTextColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp">
+
+        <ImageView
+            android:id="@+id/myImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imagenGaleria"
+            android:src="@drawable/add_photo" />
+
+        <Button
+            android:id="@+id/buttonLoadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cargarImagenGaleria" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/razaLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/nombre"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameInput"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            style="@style/TextInputEditTextStyle"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/razaLayout"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/nameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/raza"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/razaInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            style="@style/TextInputEditTextStyle"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edadLayout"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/especieLayout"
+        app:layout_constraintTop_toBottomOf="@+id/nameLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/edad"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edadInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            style="@style/TextInputEditTextStyle"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/especieLayout"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/edadLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/razaLayout"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/especie"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/especieInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            style="@style/TextInputEditTextStyle"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edadLayout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textViewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/genero"
+            android:textSize="18sp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="60dp"/>
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupGenero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonHembra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hembra"
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonMacho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/macho"
+                android:textSize="18sp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/desparasitacionLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/desparasitacion"
+        app:boxBackgroundColor="@color/white"
+
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/desparasitacionInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            style="@style/TextInputEditTextStyle"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/vacunasLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desparasitacionLayout"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/vacunas"
+        app:boxBackgroundColor="@color/white"
+
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/vacunasInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            style="@style/TextInputEditTextStyle"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/guardarButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/guardar"
+        app:layout_constraintTop_toBottomOf="@id/vacunasLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/listarButton"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"
+        style="?attr/borderlessButtonStyle"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/colorPrimary"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/listarButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/listar"
+        app:layout_constraintTop_toBottomOf="@id/vacunasLayout"
+        app:layout_constraintStart_toEndOf="@id/guardarButton"
+        app:layout_constraintEnd_toStartOf="@id/diarioButton"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"
+        style="?attr/borderlessButtonStyle"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/colorPrimary"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/diarioButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/diario"
+        app:layout_constraintTop_toBottomOf="@id/vacunasLayout"
+        app:layout_constraintStart_toEndOf="@id/listarButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        style="?attr/borderlessButtonStyle"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/colorPrimary"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

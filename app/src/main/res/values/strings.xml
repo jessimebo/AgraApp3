@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">AgraApp</string>
+    <string name="nombre">Nombre</string>
+    <string name="edad">Edad</string>
+    <string name="raza">Raza</string>
+    <string name="especie">Especie</string>
+    <string name="hembra">Hembra</string>
+    <string name="macho">Macho</string>
+    <string name="guardar">Guardar</string>
+    <string name="borrar">Borrar</string>
+    <string name="editar">Editar</string>
+    <string name="vacunas">Vacunas</string>
+    <string name="desparasitacion">Desparasitación</string>
+    <string name="diario">Diario</string>
+    <string name="imagenGaleria">Imagen desde galería</string>
+    <string name="cargarImagenGaleria">Cargar Imagen desde Galería</string>
+    <string name="genero">Género:</string>
+    <string name="listar">Listar</string>
+
+    <string name="nombre_placeholder">Nombre: %1$s</string>
+    <string name="raza_placeholder">Raza: %1$s</string>
+    <string name="especie_placeholder">Especie: %1$s</string>
+    <string name="edad_placeholder">Edad: %1$d</string>
+    <string name="genero_placeholder">Género: %1$s</string>
+    <string name="desparasitacion_placeholder">Desparasitacion: %1$s</string>
+    <string name="vacunas_placeholder">Vacunas: %1$s</string>
+    <string name="volver_a_lista">Volver a Lista</string>
+    <string name="ir_a_principal">Ir a Principal</string>
+    <string name="nameAnimal">Nombre</string>
+    <string name="raza_animal">Raza</string>
+    <string name="edadAnimal">Edad</string>
+    <string name="especieAnimal">Especie</string>
+    <string name="generoAnimal">Género</string>
+    <string name="desparasitacionAnimal">Desparasitacion</string>
+    <string name="vacunasAnimal">Vacunas</string>
+    <string name="guardarButton">Guardar</string>
+    <string name="delete">Borrar</string>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="AgraApp"
+        app:titleTextColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        android:autofillHints="nombre"
+        android:textColor="@android:color/black"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextRaza"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="@string/raza"
+        android:inputType="text"
+        android:autofillHints="raza"
+        android:textColor="@android:color/black"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextEdad"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="@string/edad"
+        android:inputType="number"
+        android:autofillHints="edad"
+        android:textColor="@android:color/black"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextEspecie"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="@string/especie"
+        android:inputType="text"
+        android:autofillHints="especie"
+        android:textColor="@android:color/black"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextGenero"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="@string/genero"
+        android:inputType="text"
+        android:autofillHints="genero"
+        android:textColor="@android:color/black"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextDesparasitacion"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="@string/desparasitacion"
+        android:inputType="text"
+        android:autofillHints="desparasitacion"
+        android:textColor="@android:color/black"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextVacunas"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="@string/vacunas"
+        android:inputType="text"
+        android:autofillHints="vacunas"
+        android:textColor="@android:color/black"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="150dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGuardar"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/guardar"
+            android:layout_marginEnd="15dp"
+            style="?attr/borderlessButtonStyle"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/colorPrimary"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBorrar"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/delete"
+            android:layout_marginStart="15dp"
+            style="?attr/borderlessButtonStyle"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/colorPrimary"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
